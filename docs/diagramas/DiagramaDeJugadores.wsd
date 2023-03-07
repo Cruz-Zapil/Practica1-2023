@@ -1,0 +1,34 @@
+@startuml
+
+class Personajes{
+    
+    vida : int
+    movimiento : int
+    daño : int
+    ataque : String
+    
+    }
+
+    Personajes <|-- caballero 
+
+    class caballero {
+
+        vida: 300
+        daño: 45
+        movimiento: 1
+        ataque: golpeTodo1Cuadro
+
+    }
+
+        Personajes <|-- Arquero
+
+    class Arquero {
+        vida : 150
+        daño : 100
+        movimiento : 3 
+        ataque : golpea1Cuadro
+
+    }
+
+
+@enduml

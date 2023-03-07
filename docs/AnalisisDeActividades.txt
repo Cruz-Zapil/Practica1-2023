@@ -1,0 +1,69 @@
+*inicia la ejecucion: mostrando*
+
+
+
+
+* inicai la ejecucion el programa: *
+1) darle 500 de oro al jugador
+2) mostrando el menu.
+
+        Menú
+    - Iniciar partida
+        1) seleccion de personaje
+            1.1) conectar con el "inventario"
+        2) seleccion de mapa
+        3) jugar
+
+    - Tienda
+        1) personajes
+        2) objetos
+        3) mejoras
+        
+
+    - Generacion de tablero
+        1) ver mapa
+        2) generar mapa
+            2.1) tamaño
+            2.2) porsentaje de Generacion
+
+    - Inventario
+        1) personajes
+        2) objetos
+        3) dinero
+
+    - Salir
+        * finalizar ejecucion* 
+
+        - Iniciar partida *
+
+* elegir la opcion 1 * 
+
+    // analiza si es la primera vez jugando. entoces
+    // mostrar la el "Menu de tienda"
+    // comprar 2 personajes minimo (obligatorio)
+    // Seleccion de jugadores
+    // seleccionar mapa
+    // jugar
+
+     - partida * 
+
+     * turnos
+     * analizar quien gana
+     * conectar personajes y enemigos 
+     * conectar con objetos
+     * ganar oro
+
+     - tienda -
+
+     * mostrar personajes
+     * mostar objetos
+     * mostrar mejoras
+     * mostrar detalle de todo lo que se compra
+     * 
+     * conectar con oro
+
+     
+
+
+    
+    

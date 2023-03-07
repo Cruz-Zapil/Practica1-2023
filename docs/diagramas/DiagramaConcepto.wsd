@@ -1,0 +1,161 @@
+@startuml
+
+
+ object Menu {
+    iniciarPartida
+    tienda
+    generacionTablero
+    inventario 
+    salir
+ }
+
+
+
+ object IniciarPartida {
+    seleccionPersonajes
+    seleccionarObjetos
+    seleccionarMejoras
+    seleccionMapa 
+    jugar
+
+
+ }
+
+ object Tienda {
+
+    personajes
+    objetso
+    mejoras
+    comprar
+
+ }
+
+ object GeneracionTab{
+    
+    verMapa
+    generarMapa
+
+ }
+
+ object Inventario{
+    personajes
+    objetos
+    mejoras
+    oro
+ }
+
+
+ Menu *-left- IniciarPartida
+
+ object SeleccionPersonajes {
+    mostrarPersonajes
+    elegirPersonajes
+ }
+
+ IniciarPartida *-- SeleccionPersonajes
+
+ object SeleccionMapa{
+    mostrarMapa
+    seleccionarMapa
+
+ }
+ IniciarPartida *-- SeleccionMapa
+
+ object Partida {
+
+ }
+
+ IniciarPartida *-- Partida
+
+ object SeleccionMejoras{
+    visualizar
+    seleccionar mejoras
+ }
+ IniciarPartida *-- SeleccionMejoras
+
+ object SeleccionObjetos{
+    visualizar
+    Seleccionar Objetos
+ }
+
+ IniciarPartida *-- SeleccionObjetos
+
+ Menu *-right- Tienda
+
+
+
+
+ object Personajes{
+
+    visualizar
+    vender
+    comprar
+
+ }
+
+ Tienda *-- Personajes
+
+ object objetos {
+    visualizar
+    comprar
+    vender
+ }
+
+ Tienda*-- objetos 
+
+ object mejoras {
+    visualizar
+    comprar
+    vender
+ }
+
+Tienda *-- mejoras
+
+
+ Menu *--  Inventario
+
+
+object personajes {
+   visualizar
+   usar
+}
+
+Inventario <|-- personajes
+
+object Objetos{
+   visualizar
+   usar
+}
+
+Inventario <|-- Objetos
+
+object Mejoras{
+   visualizar
+   usar
+}
+
+Inventario <|-- Mejoras
+
+
+
+
+ Menu *-- GeneracionTab
+
+ object GenerarMapa{
+   tamaño
+   dificultad
+ }
+
+ GeneracionTab <|-- GenerarMapa
+
+ 
+
+
+
+
+ 
+
+
+
+
+@enduml

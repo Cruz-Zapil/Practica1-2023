@@ -1,0 +1,47 @@
+@startuml
+
+
+object iniciarPartida {
+
+}
+
+
+iniciarPartida --> nuevo 
+
+object nuevo{
+    nuevoJuego?
+}
+
+nuevo -right-> tienda : si
+
+object tienda {
+
+}
+
+object cantPers{
+
+    2 personajesComprados?
+}
+cantPers --> tienda : no
+tienda --> cantPers
+cantPers --> selecPersonajes : si
+
+nuevo -down-> selecPersonajes : no
+
+object selecPersonajes{
+
+}
+selecPersonajes --> selecMapa
+
+object selecMapa{
+
+}
+
+selecMapa --> jugar
+
+object jugar{
+
+}
+
+
+@enduml

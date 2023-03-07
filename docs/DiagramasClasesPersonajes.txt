@@ -1,0 +1,7 @@
+
+personajes: 
+*Caracteristicas importantes de personajes*
+1) Vida
+2) Movimiento
+3) Daño
+4) Ataque
