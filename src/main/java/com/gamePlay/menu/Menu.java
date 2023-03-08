@@ -20,8 +20,7 @@ public class Menu {
 
         switch (opcion) {
             case 1:
-            opcion1MenuPrincipal();
-                           
+            opcion1MenuPrincipal();                           
                 break;
 
             case 2: 
@@ -50,8 +49,7 @@ public class Menu {
 
             Util.colorPurpura(" Tiene su inventario Vacio, primero compra 2 personajes y algunos objetos.");
             Main.oro =500;
-            menuTienda();            
-            
+            menuTienda();   
 
         }else{
 
